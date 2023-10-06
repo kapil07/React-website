@@ -5,8 +5,8 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
