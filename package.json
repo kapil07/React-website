@@ -1,9 +1,8 @@
 {
   "name": "react_project",
   "version": "1.0.0",
-  "homepage": "https://kapil07.github.io/React-website/",
+  "homepage": "https://kapil07.github.io/React-website",
   "description": "",
- 
   "scripts": {
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
