@@ -10,7 +10,7 @@ import RestaurantMenu from "./component/RestaurantMenu";
 import { Provider } from "react-redux";
 import store from "./util/store";
 import Cart from "./component/Cart";
-import Login from "./component/login";
+import Login from "./component/Login";
 
 const AppLayout = () => {
   return (
