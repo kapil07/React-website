@@ -83,7 +83,7 @@ const RestaurantMenu = () => {
           alt={restaurant?.name}
         ></img>
         <div className="restaurant-details">
-          <h1>{restaurant.name}</h1>
+          <h2>{restaurant.name}</h2>
           <h3>{restaurant.cuisines.join(" ,  ")}</h3>
           <div className="restaurant-summary">
             <h2 className="rate">{restaurant.avgRatingString}</h2>
@@ -101,30 +101,33 @@ const RestaurantMenu = () => {
 
         <div className="menu-items-list">
           {menuItem.map((item) => (
-            <div className="menu-item-details" key={item?.id}>
-              <div className="menu-items">
-                <h1>{item?.name}</h1>
-                <p className="item-cost">
-                  {item?.price > 0
-                    ? new Intl.NumberFormat("en-IN", {
-                        style: "currency",
-                        currency: "INR",
-                      }).format(item?.price / 100)
-                    : " "}
-                </p>
-                <h2>{item?.description}</h2>
-              </div>
+            <>
+              <div className="menu-item-details" key={item?.id}>
+                <div className="menu-items">
+                  <h1>{item?.name}</h1>
+                  <p className="item-cost">
+                    {item?.price > 0
+                      ? new Intl.NumberFormat("en-IN", {
+                          style: "currency",
+                          currency: "INR",
+                        }).format(item?.price / 100)
+                      : " "}
+                  </p>
+                  <h2>{item?.description}</h2>
+                </div>
 
-              <div className="img-wrapper">
-                {item?.imageId && (
-                  <img
-                    src={ITEM_IMG_CDN_URL + item?.imageId}
-                    alt={item?.name}
-                  ></img>
-                )}
-                <button onClick={() => addFoodItem(item)}>ADD +</button>
+                <div className="img-wrapper">
+                  {item?.imageId && (
+                    <img
+                      src={ITEM_IMG_CDN_URL + item?.imageId}
+                      alt={item?.name}
+                    ></img>
+                  )}
+                  <button onClick={() => addFoodItem(item)}>ADD +</button>
+                </div>
               </div>
-            </div>
+              <hr />
+            </>
           ))}
         </div>
       </div>
