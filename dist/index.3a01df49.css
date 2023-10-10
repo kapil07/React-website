@@ -520,10 +520,6 @@ hr {
 }
 
 @media (width <= 800px) {
-  .menu-item-details {
-    flex-direction: column;
-  }
-
   .menu-item-details .img-wrapper {
     margin: 10px 20px;
   }
@@ -562,9 +558,21 @@ hr {
   }
 }
 
+@media (width <= 400px) {
+  .menu-item-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .menu-items {
+    margin-left: 80px;
+  }
+}
+
 .cart-info {
-  justify-content: space-around;
-  margin: 20px 20px 0;
+  margin: 20px 20px 0 10px;
   display: flex;
 }
 

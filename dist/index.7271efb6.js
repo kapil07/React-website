@@ -60931,35 +60931,17 @@ const MENU_ITEM_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Item
 const RESTAURANT_TYPE_KEY = "type.googleapis.com/swiggy.presentation.food.v2.Restaurant";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l5rS0":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a366 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a366.prelude(module);
-
-try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-        children: "Shimmer UI is Loading....."
-    }, void 0, false, {
-        fileName: "src/component/Shimmer.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
+// return <h2>Shimmer UI is Loading.....</h2>;
 };
 _c = Shimmer;
 exports.default = Shimmer;
 var _c;
 $RefreshReg$(_c, "Shimmer");
 
-  $parcel$ReactRefreshHelpers$a366.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aOSbA":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aOSbA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$60db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65581,75 +65563,82 @@ const FoodItem = (item)=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "menu-items-list menu-content",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "menu-item-details",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "menu-items",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: item?.item?.name
-                        }, void 0, false, {
-                            fileName: "src/component/FoodItem.js",
-                            lineNumber: 16,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "item-cost",
-                            children: item?.item?.price > 0 ? new Intl.NumberFormat("en-IN", {
-                                style: "currency",
-                                currency: "INR"
-                            }).format(item?.item?.price / 100) : " "
-                        }, void 0, false, {
-                            fileName: "src/component/FoodItem.js",
-                            lineNumber: 20,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: item?.item?.description
-                        }, void 0, false, {
-                            fileName: "src/component/FoodItem.js",
-                            lineNumber: 28,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/component/FoodItem.js",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "img-wrapper",
-                    children: [
-                        item?.item?.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _constant.ITEM_IMG_CDN_URL) + item?.item?.imageId,
-                            alt: item?.item?.name
-                        }, void 0, false, {
-                            fileName: "src/component/FoodItem.js",
-                            lineNumber: 33,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: ()=>handleRemoveItemClick(),
-                            children: "Remove -"
-                        }, void 0, false, {
-                            fileName: "src/component/FoodItem.js",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/component/FoodItem.js",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/component/FoodItem.js",
-            lineNumber: 14,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "menu-item-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "menu-items",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: item?.item?.name
+                            }, void 0, false, {
+                                fileName: "src/component/FoodItem.js",
+                                lineNumber: 16,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "item-cost",
+                                children: item?.item?.price > 0 ? new Intl.NumberFormat("en-IN", {
+                                    style: "currency",
+                                    currency: "INR"
+                                }).format(item?.item?.price / 100) : " "
+                            }, void 0, false, {
+                                fileName: "src/component/FoodItem.js",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: item?.item?.description
+                            }, void 0, false, {
+                                fileName: "src/component/FoodItem.js",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/FoodItem.js",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "img-wrapper",
+                        children: [
+                            item?.item?.imageId && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _constant.ITEM_IMG_CDN_URL) + item?.item?.imageId,
+                                alt: item?.item?.name
+                            }, void 0, false, {
+                                fileName: "src/component/FoodItem.js",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>handleRemoveItemClick(),
+                                children: "Remove -"
+                            }, void 0, false, {
+                                fileName: "src/component/FoodItem.js",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/FoodItem.js",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/FoodItem.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                fileName: "src/component/FoodItem.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/component/FoodItem.js",
         lineNumber: 13,
         columnNumber: 5

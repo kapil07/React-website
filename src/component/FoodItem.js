@@ -38,6 +38,7 @@ const FoodItem = (item) => {
           <button onClick={() => handleRemoveItemClick()}>Remove -</button>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
