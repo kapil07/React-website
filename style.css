@@ -610,7 +610,7 @@ hr {
   }
 
   .menu-item-details .img-wrapper button {
-    width: 20%;
+    width: 50%;
     padding: 10px;
   }
 }
@@ -658,6 +658,19 @@ hr {
 .cart-img {
   width: 30px;
   height: 30px;
+}
+
+/* ............................Resposive Cart.................................. */
+@media (max-width: 600) {
+  .cart-btn {
+    width: 15%;
+  }
+}
+
+@media (max-width: 400) {
+  .cart-btn {
+    width: 25%;
+  }
 }
 
 /* ------------------------Abous us Page---------------------- */
